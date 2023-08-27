@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+        <script src="js/main.js"></script>
+        <title>Previsão do Tempo</title>
+    </head>
+    <body>
+        <div class="box">
+            <input class="input-city" type="text" placeholder="Digite o nome da cidade" />
+            <button class="btn-buscar" onclick="clickBtn()">
+                <img class="img-buscar" src="img/lupa.png" alt="botao-lupa">
+            </button>
+            <div class="md-box">
+                <h2 class="city-name">Selecione a cidade</h2>
+                <p class="temp"></p>
+            </div>
+            <div class="sm-box">
+                <img class="img-prev" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo" />
+                <p class="txt-prev"></p>
+            </div>
+            <p class="umid"></p>
+        </div>
+    </body>
+</html>
